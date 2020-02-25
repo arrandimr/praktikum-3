@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Kalkulator Sederhana</title>
+	<link rel="stylesheet" type="text/css" href="efeklatihan2.css">
+</head>
+<script language="javascript"> 
+		
+    function tambah()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a+b
+		if (isNaN(c))
+			alert("masukkan angka")
+		else
+    form.hasil.value = c
+    }
+
+    function kurang()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a-b
+		if (isNaN(c))
+			alert("Tolong masukkan angka :)")
+		else
+    form.hasil.value=c
+    }
+
+    function kali()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a*b
+		if (isNaN(c))
+			alert("Tolong masukkan angka :)")
+		else
+    form.hasil.value=c
+    }
+
+    function bagi()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a/b
+		if (isNaN(c))
+			alert("Tolong masukkan angka :)")
+		else
+    form.hasil.value = c
+    }
+
+    function persen()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=a%b
+		if (isNaN(c))
+			alert("Tolong masukkan angka :)")
+		else
+    form.hasil.value = c
+    }
+
+    function pangkat()
+    {
+    var a=parseFloat(document.form.angka1.value)
+    var b=parseFloat(document.form.angka2.value)
+    var c=Math.pow(a, b)
+		if (isNaN(c))
+			alert("Tolong masukkan angka :)")
+		else
+    form.hasil.value = c
+    }
+
+    </script>
+
+<body> 
+<form name="form">
+	<header>
+		<h1 class="judul">Kalkulator Sederhana</h1>
+		<p class="deskripsi">Silahkan masukkan angka anda</p>
+	</header>
+	
+	<div class="wrap" align="">
+		<table width="500" height="95" align="center" class="gayatabel">
+			<tr> 
+				<td><p>Angka Pertama</p><input type="text" name="angka1" size="20"></td>
+				<td><p>Angka Kedua</p><input type="text" name="angka2" size="20"></td>
+				<td><p>Hasil</p><input type="text" name="hasil" ></td>
+			</tr>
+			<tr>
+				<td colspan="3" align="center" height="75px">
+					<input type="button" value="  +  " onClick="tambah()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  -  " onClick="kurang()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  x  " onClick="kali()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  /  " onClick="bagi()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  %  " onClick="persen()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="button" value="  ^  " onClick="pangkat()" style="height:30px; width:50px; font-size:12pt;">
+					<input type="reset" value="  C  " style="height: 30px; width:50px; font-size:12pt;">
+				</td>
+			</tr>
+		</table>
+	</div>
+		</form>
+	</body>
+</html>

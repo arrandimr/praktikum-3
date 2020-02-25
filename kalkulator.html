@@ -1,0 +1,80 @@
+<html>
+<body>
+<head>
+<title>UAS WEB ANDI PURWANTO</title>
+</head>
+<table border=3 width=100% height=100%>
+<tr>
+    <td align=center>
+        <table cellpadding=15 style="font-size:30pt;">
+        <form name="form">
+        <tr><td colspan=3 align=center><b>Operasi Aritmatika</b></td>
+        <tr><td>A</td><td>:</td><td>
+                    <input type="text" name="a" size="10" style="font-size:20pt;">    </td></tr>
+        <tr><td>B</td><td>:</td><td>
+                    <input type="text" name="b" size="10" style="font-size:20pt;">    </td></tr>
+        <tr><td>Hasil</td><td>:</td><td>
+                    <input type="text" name="hasil" size="10" style="font-size:20pt;">    </td></tr>
+        </form></table>
+<tr>
+<td colspan=3 align=center height="75px" >
+<input type="button" value="  +  " onClick="tambah()" style="height:60px; width:100px; font-size:35pt;">
+<input type="button" value="  -  " onClick="kurang()" style="height:60px; width:100px; font-size:35pt;">
+<input type="button" value="  x  " onClick="kali()" style="height:60px; width:100px; font-size:35pt;">
+<input type="button" value="  /  " onClick="bagi()" style="height:60px; width:100px; font-size:35pt;">
+<input type="button" value="  %  " onClick="persen()" style="height:60px; width:100px; font-size:35pt;">
+<input type="button" value="  ^  " onClick="pangkat()" style="height:60px; width:100px; font-size:35pt;">
+</td><font size="7">
+</tr>
+</table>
+<SCRIPT LANGUAGE="JavaScript">   
+    function tambah()
+    {
+    a=eval(form.a.value)
+    b=eval(form.b.value)
+    c=a+b
+    form.hasil.value = c
+    }
+
+    function kurang()
+    {
+    a=eval(form.a.value)
+    b=eval(form.b.value)
+    c=a-b
+    form.hasil.value=c
+    }
+
+    function kali()
+    {
+    a=eval(form.a.value)
+    b=eval(form.b.value)
+    c=a*b
+    form.hasil.value=c
+    }
+
+    function bagi()
+    {
+    a=eval(form.a.value)
+    b=eval(form.b.value)
+    c=a/b
+    form.hasil.value = c
+    }
+
+    function persen()
+    {
+    a=eval(form.a.value)
+    b=eval(form.b.value)
+    c=a%b
+    form.hasil.value = c
+    }
+
+    function pangkat()
+    {
+    a=eval(form.a.value)
+    b=eval(form.b.value)
+    c=Math.pow(a, b)
+    form.hasil.value = c
+    }
+    </SCRIPT>
+</body>  
+</html>
